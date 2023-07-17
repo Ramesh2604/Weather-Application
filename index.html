@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather application</title>
+    <style>
+        body{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXPSN4jxawZ3jXp6hdUWL6i_TKTIOfavGys-tQ4uzjhQ&s);
+            background-repeat:no-repeat;
+            background-size: cover;
+            
+        }
+        form{
+            margin: 5% 0 0 35%;
+        }
+        h1{
+            font-size: 300%;
+            color: aliceblue;
+            text-shadow: 2px 2px blue;
+        }
+        label{
+            margin: 5rem 5rem;
+            font-size: 150%;
+            font-weight: 700;
+            font-family: monospace;
+        }
+        input{
+            margin: 2rem 4.5rem;
+            width: 15rem;
+            height: 2rem;
+            border-radius: 10px;
+            font-size: 100%;
+        }
+        select{
+            margin: 2rem 6rem;
+            font-size: 100%;
+            padding: .5rem 2rem;
+            border-radius: 10px;
+        }
+        button{
+            margin: 1rem 8rem;
+            font-size: 100%;
+            padding: .5rem 2rem;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <h1>Weather Application</h1>
+        <label for="">Enter Your city Name:</label><br>
+        <input type="text" name="city" ><br>
+        <label>Temp Value Units:</label><br>
+        <select name="temp" id="temp">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select><br>
+        <button type="submit">Go</button>
+                </form>
+</body>
+</html>
